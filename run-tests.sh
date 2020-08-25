@@ -13,4 +13,4 @@ pydocstyle invenio_cache tests docs && \
 isort invenio_cache tests --check-only --diff && \
 check-manifest --ignore ".travis-*" && \
 sphinx-build -qnNW docs docs/_build/html && \
-python setup.py test
+python -m pytest
